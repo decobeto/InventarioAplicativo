@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventarioAplicativo", "InventarioAplicativo\InventarioAplicativo.csproj", "{68089AEE-FBB5-4821-B152-424E63C23B2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68089AEE-FBB5-4821-B152-424E63C23B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68089AEE-FBB5-4821-B152-424E63C23B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68089AEE-FBB5-4821-B152-424E63C23B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68089AEE-FBB5-4821-B152-424E63C23B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE06D555-8DF3-441D-8EF7-0562BD1B334B}
+	EndGlobalSection
+EndGlobal
