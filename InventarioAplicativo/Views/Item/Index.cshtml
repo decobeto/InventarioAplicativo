@@ -4,12 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Itens</h1>
+<hr />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<table class="table table-hover">
     <thead>
         <tr>
             <th>
@@ -24,7 +22,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Und)
             </th>
-            <th></th>
+            <th>
+                <a asp-action="AddOrEdit" class="btn btn-outline-success">
+                    <i class="far fa-plus-square"></i>
+                    Adicionar novo item
+                </a>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -43,9 +46,10 @@
                 @Html.DisplayFor(modelItem => item.Und)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ItemID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ItemID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ItemID">Delete</a>
+                <a asp-action="AddOrEdit" asp-route-id="@item.ItemID"><i class="fa fa-marker fa-lg"></i></a>
+                <a asp-action="Delete" asp-route-id="@item.ItemID" class="text-danger ml-1" onclick="return confirm('Tem certeza que deseja exluir o item?')">
+                    <i class="fa fa-trash-alt fa-lg"></i>
+                </a>
             </td>
         </tr>
 }
