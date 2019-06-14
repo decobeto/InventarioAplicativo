@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InventarioAplicativo.Migrations
 {
     [DbContext(typeof(ItemContext))]
-    [Migration("20190613130620_InnitialCreate")]
-    partial class InnitialCreate
+    [Migration("20190614001949_initital")]
+    partial class initital
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

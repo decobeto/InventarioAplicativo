@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventarioAplicativo.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventarioAplicativo.Controllers
 {
+    [Authorize]
     public class ItemController : Controller
     {
         private readonly ItemContext _context;
